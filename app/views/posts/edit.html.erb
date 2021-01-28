@@ -9,3 +9,14 @@
   
   <%= submit_tag "Submit Post" %>
 <% end %>
+
+form for 
+
+<%= form_for @post do |f| %>
+<%= f.label :title, 'Post Title'%>
+<%= f.text_field :title %>
+
+<%= f.label :description, 'Post Description'%>
+<%= f.text_field :description %>
+  <%= f.submit %>
+<%end%>
